@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_077a691156baa9ffee2a3b32a93919ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_077a691156baa9ffee2a3b32a93919ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_077a691156baa9ffee2a3b32a93919ab = L.map(
+                "map_077a691156baa9ffee2a3b32a93919ab",
+                {
+                    center: [60.472, 8.4689],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_67f285112cac0edea5d49836a7f1a5ee = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_67f285112cac0edea5d49836a7f1a5ee.addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var marker_d940514016955c1482c09a7fa937b90d = L.marker(
+                [59.9139, 10.7522],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_5acb135f467675e88e50a8aab428be17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d940514016955c1482c09a7fa937b90d.setIcon(icon_5acb135f467675e88e50a8aab428be17);
+        
+    
+        var popup_db87fcb55cd0895d1e007f3a2a7bec82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7558585fe667df59cd4ecfecc733483 = $(`<div id="html_e7558585fe667df59cd4ecfecc733483" style="width: 100.0%; height: 100.0%;">Oslo: Air Quality - Bad</div>`)[0];
+                popup_db87fcb55cd0895d1e007f3a2a7bec82.setContent(html_e7558585fe667df59cd4ecfecc733483);
+            
+        
+
+        marker_d940514016955c1482c09a7fa937b90d.bindPopup(popup_db87fcb55cd0895d1e007f3a2a7bec82)
+        ;
+
+        
+    
+    
+            var marker_c2498b17a99471d0120765686e84061d = L.marker(
+                [60.3913, 5.3221],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_dcf64cd7c7a0e4bb669ea9bc6439226b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2498b17a99471d0120765686e84061d.setIcon(icon_dcf64cd7c7a0e4bb669ea9bc6439226b);
+        
+    
+        var popup_f64c293cd68e153e94f7d736fea990f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_038f49fb632194c3eb1ffe19bb1654c3 = $(`<div id="html_038f49fb632194c3eb1ffe19bb1654c3" style="width: 100.0%; height: 100.0%;">Bergen: Air Quality - Bad</div>`)[0];
+                popup_f64c293cd68e153e94f7d736fea990f7.setContent(html_038f49fb632194c3eb1ffe19bb1654c3);
+            
+        
+
+        marker_c2498b17a99471d0120765686e84061d.bindPopup(popup_f64c293cd68e153e94f7d736fea990f7)
+        ;
+
+        
+    
+    
+            var marker_f6f0ac2ce14b459369fb45cc2907f07b = L.marker(
+                [63.4305, 10.3951],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_0465ebaec33d0014048d34bc8140f8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6f0ac2ce14b459369fb45cc2907f07b.setIcon(icon_0465ebaec33d0014048d34bc8140f8ed);
+        
+    
+        var popup_210dd59e602b932fa61f8557abe8863c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00287b61328becf9d2a693b682e76f9f = $(`<div id="html_00287b61328becf9d2a693b682e76f9f" style="width: 100.0%; height: 100.0%;">Trondheim: Air Quality - Bad</div>`)[0];
+                popup_210dd59e602b932fa61f8557abe8863c.setContent(html_00287b61328becf9d2a693b682e76f9f);
+            
+        
+
+        marker_f6f0ac2ce14b459369fb45cc2907f07b.bindPopup(popup_210dd59e602b932fa61f8557abe8863c)
+        ;
+
+        
+    
+    
+            var marker_1e60f05ea46a603f77793caed590645d = L.marker(
+                [58.9699, 5.7331],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_092577da14166c167059821dbae55a1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e60f05ea46a603f77793caed590645d.setIcon(icon_092577da14166c167059821dbae55a1e);
+        
+    
+        var popup_db42b07c7c35a36b9fdf780a5a8806e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0be710ddc7f1481c33af00157c3636d5 = $(`<div id="html_0be710ddc7f1481c33af00157c3636d5" style="width: 100.0%; height: 100.0%;">Stavanger: Air Quality - Bad</div>`)[0];
+                popup_db42b07c7c35a36b9fdf780a5a8806e8.setContent(html_0be710ddc7f1481c33af00157c3636d5);
+            
+        
+
+        marker_1e60f05ea46a603f77793caed590645d.bindPopup(popup_db42b07c7c35a36b9fdf780a5a8806e8)
+        ;
+
+        
+    
+    
+            var marker_7fbc5e836a6abea5ffe7bea42a1ddf75 = L.marker(
+                [69.6492, 18.9553],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_f9ed03be5e953982f66717c5b5f0de69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7fbc5e836a6abea5ffe7bea42a1ddf75.setIcon(icon_f9ed03be5e953982f66717c5b5f0de69);
+        
+    
+        var popup_093a02fca66a63bf335f47476fcb65d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa8e65c3d1467041bc07a48f7875c4fc = $(`<div id="html_fa8e65c3d1467041bc07a48f7875c4fc" style="width: 100.0%; height: 100.0%;">Tromsø: Air Quality - Bad</div>`)[0];
+                popup_093a02fca66a63bf335f47476fcb65d0.setContent(html_fa8e65c3d1467041bc07a48f7875c4fc);
+            
+        
+
+        marker_7fbc5e836a6abea5ffe7bea42a1ddf75.bindPopup(popup_093a02fca66a63bf335f47476fcb65d0)
+        ;
+
+        
+    
+    
+            var marker_666aa5ee86733d48b106f5aa216df6b4 = L.marker(
+                [58.1467, 7.9956],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_7af8283aad7b2426ffe3f2632f879a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_666aa5ee86733d48b106f5aa216df6b4.setIcon(icon_7af8283aad7b2426ffe3f2632f879a9c);
+        
+    
+        var popup_33ac714709f9a833eaf18ab1ef1ab316 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eee92bab4579adc71cd1e4f4637cd1d2 = $(`<div id="html_eee92bab4579adc71cd1e4f4637cd1d2" style="width: 100.0%; height: 100.0%;">Kristiansand: Air Quality - Bad</div>`)[0];
+                popup_33ac714709f9a833eaf18ab1ef1ab316.setContent(html_eee92bab4579adc71cd1e4f4637cd1d2);
+            
+        
+
+        marker_666aa5ee86733d48b106f5aa216df6b4.bindPopup(popup_33ac714709f9a833eaf18ab1ef1ab316)
+        ;
+
+        
+    
+    
+            var marker_de94e8316302a3ac84c5068c80ef78c8 = L.marker(
+                [59.2181, 10.9394],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_05aa806b880532a2c1dc5f8c29f326ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de94e8316302a3ac84c5068c80ef78c8.setIcon(icon_05aa806b880532a2c1dc5f8c29f326ad);
+        
+    
+        var popup_6689c19a50f17e230c2e4b9b68436f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21d861e5e2474d7c8565ee64882d9ee9 = $(`<div id="html_21d861e5e2474d7c8565ee64882d9ee9" style="width: 100.0%; height: 100.0%;">Fredrikstad: Air Quality - Bad</div>`)[0];
+                popup_6689c19a50f17e230c2e4b9b68436f46.setContent(html_21d861e5e2474d7c8565ee64882d9ee9);
+            
+        
+
+        marker_de94e8316302a3ac84c5068c80ef78c8.bindPopup(popup_6689c19a50f17e230c2e4b9b68436f46)
+        ;
+
+        
+    
+    
+            var marker_7c10116e7b9363c3fb856f56c35accf4 = L.marker(
+                [59.7439, 10.2045],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_76cc79708178523eb6f858b5c45434df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c10116e7b9363c3fb856f56c35accf4.setIcon(icon_76cc79708178523eb6f858b5c45434df);
+        
+    
+        var popup_86bfb6f5e9ef851a68ffda94078fba64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbf7e737fbb3a0a7d2e76db4bfdf6f3c = $(`<div id="html_fbf7e737fbb3a0a7d2e76db4bfdf6f3c" style="width: 100.0%; height: 100.0%;">Drammen: Air Quality - Bad</div>`)[0];
+                popup_86bfb6f5e9ef851a68ffda94078fba64.setContent(html_fbf7e737fbb3a0a7d2e76db4bfdf6f3c);
+            
+        
+
+        marker_7c10116e7b9363c3fb856f56c35accf4.bindPopup(popup_86bfb6f5e9ef851a68ffda94078fba64)
+        ;
+
+        
+    
+    
+            var marker_7a97ca4ce3e8d17352c912e51510b78b = L.marker(
+                [59.2096, 9.606],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_9d731318c2da7af315633805b68147d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a97ca4ce3e8d17352c912e51510b78b.setIcon(icon_9d731318c2da7af315633805b68147d0);
+        
+    
+        var popup_6cd550c7dae2d61d7893c8b08017c846 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e83c7c6cc8e2b4f3758d6f373834e01 = $(`<div id="html_4e83c7c6cc8e2b4f3758d6f373834e01" style="width: 100.0%; height: 100.0%;">Skien: Air Quality - Bad</div>`)[0];
+                popup_6cd550c7dae2d61d7893c8b08017c846.setContent(html_4e83c7c6cc8e2b4f3758d6f373834e01);
+            
+        
+
+        marker_7a97ca4ce3e8d17352c912e51510b78b.bindPopup(popup_6cd550c7dae2d61d7893c8b08017c846)
+        ;
+
+        
+    
+    
+            var marker_861aec34e27f86c65e447405295d9562 = L.marker(
+                [62.4722, 6.3873],
+                {}
+            ).addTo(map_077a691156baa9ffee2a3b32a93919ab);
+        
+    
+            var icon_71a421066b56e22138f713ed8cf361ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_861aec34e27f86c65e447405295d9562.setIcon(icon_71a421066b56e22138f713ed8cf361ee);
+        
+    
+        var popup_e73bf6a2d69a3ab263e71139e72599cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71b54aae107179e1fe90d6e9bc6a73f2 = $(`<div id="html_71b54aae107179e1fe90d6e9bc6a73f2" style="width: 100.0%; height: 100.0%;">Ålesund: Air Quality - Bad</div>`)[0];
+                popup_e73bf6a2d69a3ab263e71139e72599cf.setContent(html_71b54aae107179e1fe90d6e9bc6a73f2);
+            
+        
+
+        marker_861aec34e27f86c65e447405295d9562.bindPopup(popup_e73bf6a2d69a3ab263e71139e72599cf)
+        ;
+
+        
+    
+</script>
+</html>
